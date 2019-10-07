@@ -45,9 +45,9 @@ function updateAbOver(){
 		$('.socials-container').css({'left':$aboverw/2-28+'px','top':$aboverh/2-9+'px'});
 		
 		//position of mouseover circle from blogpage
-		$('.blogpost-hover').css({'left':$aboverw/2-25+'px','top':$aboverh/2});
+		$('.blogpost-hover').css({'left':$aboverw/2-25+'px','top':$aboverh/2+150});
 		
-		$('.blogpost-hover2').css({'left':$abover2w/2-25+'px','top':$abover2h/2});
+		$('.blogpost-hover2').css({'left':$abover2w/2-25+'px','top':$abover2h/2+150});
 		
 		
 		
