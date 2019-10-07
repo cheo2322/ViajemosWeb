@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency - HTML5 Booking template</title>
+  
+  <!-- Bootstrap -->
+  <link href="dist/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="assets/css/custom.css" rel="stylesheet" media="screen">
+  
+  <!-- Carousel -->
+  <link href="examples/carousel/carousel.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+  <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]--> 
+  
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic" rel="stylesheet" type="text/css">
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" media="screen" />
+  <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="assets/css/font-awesome-ie7.css" media="screen" /><![endif]--> 
+  
+  <!-- Picker UI-->
+  <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+  
+  <!-- jQuery --> 
+  <script src="assets/js/jquery.v2.0.3.js"></script>
+  <style>
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+</style>
+</head>
+
+<body id="top">
+  
+  <!-- Top wrapper -->
+  <div class="navbar-wrapper2 navbar-fixed-top">
+    <div class="container">
+      <div class="navbar mtnav">
+        <div class="container offset-3"> 
+          <!-- Navigation-->
+          <div class="navbar-header">
+            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a href="#" class="navbar-brand"><img src="img/water-mark.png" alt="Logo Viajemos a U.S.A." class="logo"/></a> </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Inicio</a></li>
+              <li class="dropdown active"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Planes <span class="badge indent0">3</span><b class="lightcaret mt-2"></b></a>
+                <ul class="dropdown-menu posright-0">
+                  <li>
+                    <div class="row dropwidth01">
+                      <ul class="droplist col-md-4">
+                        <li class="dropdown-header">Colegios</li>
+                        <li><a href="colegios.html">Plan vacacional</a></li>
+                        <!--<li><a href="index2.html">Ofertas</a></li>
+                        <li><a href="index3.html">Búsqueda</a></li>
+                        <li><a href="index4.html">Home 4 presentation</a></li>
+                        <li><a href="index5.html">Home 5 footer2</a></li>
+                        <li><a href="index6.html">Home 6 full</a></li>
+                        <li><a href="index7.html">Home 7 </a></li> --> 
+                        <!-- <li><a href="z-new-homepage.html">New Homepage</a> <span class="green">new</span></li> -->
+                      </ul>
+                      <ul class="droplist col-md-4">
+                        <li class="dropdown-header">Quinceañeras</li>
+                        <li><a href="quince.html">Plan para tus 15 años</a></li>
+                        <!--
+                        <li><a href="intro2.html">Intro 2 - slides</a> <span class="glyphicon glyphicon-star lblue"></span></li>
+                        <li><a href="intro3.html">Intro 3 - slides2</a> <span class="glyphicon glyphicon-star lblue"></span></li> -->
+                      </ul>
+                      <ul class="droplist col-md-4">
+                        <li class="dropdown-header">Planes exclusivos</li>
+                        <li><a href="humana.html">Carrera en Las Vegas</a></li>
+                        <li><a href="#">Encuentros deportivos</a></li>
+                        <li></li>
+                        <!--<li class="inactive size10 lgrey caps"><span class="glyphicon glyphicon-star "></span> Próximamente: <br/> Viaje a Las Vegas</li>-->
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Planes exclusivos <span class="badge indent0">1</span><b class="lightcaret mt-2"></b></a>
+                <ul class="dropdown-menu posright-0">
+                  <li>
+                    <div class="row dropwidth01">
+                      <ul class="droplist col-md-4">
+                        <li><a href="humana.html">Humana Rock 'N' Roll</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Galería</a></li>
+              <li><a href="index.html#about_">Acerca de</a></li>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Contactos</a></li>
+              <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">¿Quieres más?<b class="lightcaret mt-2"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Consulta nuestros otros servicios</li>
+                  <li><a href="http://www.multinegocios.com.ec/" target="_blank">Multinegocios</a></li>
+                  <li><a href="#">Abogados y Asesores Inmobiliarios</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- /Navigation--> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Top wrapper --> 
+  
+  <!--<div id="map-canvas2"></div> -->
+  <div id="dajy" class="mtslide sliderbg fixed cstyle11">
+    
+	  <div id="map-canvas2"></div>
+    <!--The div element for the map -->
+    <!--<div id="map"> </div>
+<h3>My Google Maps Demo</h3>-->
+      <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -0.331943, lng: -78.447017};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 10, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script> 
+      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpNPQW4cBXfHxyeyp6eu_a6PMAMRl-Qr4&callback=initMap">
+    </script> 
+    
+  </div>
+  
+  <!-- WRAP -->
+  <div class="wrap cstyle03">
+    <div class="container mt-200 z-index100">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bs-example bs-example-tabs cstyle04">
+            <div class="tab-content">
+            
+            <form action="#">
+				<div class="col-md-4">
+              <span class="opensans size24 slim">Contacto</span>
+              <input type="text" placeholder="Nombre" class="form-control logpadding margtop10">
+              <input type="text" placeholder="Teléfono" class="form-control logpadding margtop20">
+              <input type="text" placeholder="E-mail" class="form-control logpadding margtop20">
+              </div>
+              <div class="col-md-4">
+                <textarea rows="9" placeholder="Escribe aquí tu mensaje" class="form-control margtop10"></textarea>
+              </div>
+              <div class="col-md-4 opensans grey"> Dirección:<br/> <span class="dark"> Avenida Abdón Calderón<br/> y Espejo<br/> Sangolquí, Ecuador<br/> </span> <br/> Teléfono<br/>
+                <p class="opensans size30 lblue xslim">2339 - 098</p>
+                <p class="opensans size20 lblue xslim">0985775379</p>
+                Email<br/> <a href="mailto:office@company.com" class="green2">info@viajemosausa.com</a> 
+              </div>
+              <div class="searchbg3">
+              <button type="submit" class="btn-search right mr20">Enviar correo</button>
+				  </div>
+            </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+	  <!--
+  <div class="lastminutecontact lcfix">
+    <div class="container lmc"> <img src="images/rating-4.png" alt=""/><br/> LAST MINUTE: <b>Barcelona</b> - 2 nights - Flight+4* Hotel, Dep 27h Aug from $209/person<br/>
+      <form action="details.html" >
+        <button class="btn iosbtn" type="submit">Read more</button>
+      </form>
+    </div>
+  </div> -->
+  
+  <!-- FOOTER -->
+  
+  <div class="footerbg sfix3">
+    <div class="container">
+      <footer>
+        <div class="footer"> <a href="https://www.facebook.com/viajemosaorlando/" target="_blank" class="social1"><img src="images/icon-facebook.png" alt=""/></a> <a href="#" class="social2"><img src="images/icon-twitter.png" alt=""/></a> <a href="https://www.instagram.com/viajemosausaec/" target="_blank" class="social3"><img src="img/icon-ig.png" alt="" style="width: 3.5%; height: 3.5%" /></a> <a href="https://www.youtube.com/channel/UCUcrNswLvAHIUEWOSdHAonQ/" target="_blank" class="social4"><img src="images/icon-youtube.png" alt=""/></a> <br/><br/> Derechos de autor &copy; 2019 <a href="index.html">ViajemosaU.S.A.com</a> Todos los derechos reservados. Propiedad de <a href="http://multinegocios.com.ec" target="_blank">Multinegocios Ecuador</a> <br/><br/> <a href="#top" id="gotop2" class="gotop"><img src="images/spacer.png" alt=""/></a> </div>
+      </footer>
+    </div>
+  </div>
+  </div>
+  <!-- END OF WRAP --> 
+  
+  <!-- This page JS --> 
+  <script src="assets/js/js-index.js"></script> 
+  
+  <!-- Googlemap --> 
+  <script src="assets/js/initialize-google-map-contact.js"></script> 
+  
+  <!-- Custom functions --> 
+  <script src="assets/js/functions.js"></script> 
+  
+  <!-- Picker UI--> 
+  <script src="assets/js/jquery-ui.js"></script> 
+  
+  <!-- Easing --> 
+  <script src="assets/js/jquery.easing.js"></script> 
+  
+  <!-- Nicescroll  --> 
+  <script src="assets/js/jquery.nicescroll.min.js"></script> 
+  
+  <!-- CarouFredSel --> 
+  <script src="assets/js/jquery.carouFredSel-6.2.1-packed.js"></script> 
+  <script src="assets/js/helper-plugins/jquery.touchSwipe.min.js"></script> 
+  <script type="text/javascript" src="assets/js/helper-plugins/jquery.mousewheel.min.js"></script> 
+  <script type="text/javascript" src="assets/js/helper-plugins/jquery.transit.min.js"></script> 
+  <script type="text/javascript" src="assets/js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script> 
+  
+  <!-- Custom Select --> 
+  <script type='text/javascript' src='assets/js/jquery.customSelect.js'></script> 
+  
+  <!-- Include all compiled plugins (below), or include individual files as needed --> 
+  <script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>
