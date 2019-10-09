@@ -123,8 +123,9 @@
 		  $('#map-canvas2').css({'display':'block'});
 		  var script = document.createElement('script');
 		  script.type = 'text/javascript';
-		  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-			  'callback=initialize';
+		  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false'+
+			  '&callback=initialize';
+		  //script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBpNPQW4cBXfHxyeyp6eu_a6PMAMRl-Qr4&v=3.exp&callback=initialize';
 		  document.body.appendChild(script);
 		  
 		  google.maps.event.trigger(map, 'resize');
